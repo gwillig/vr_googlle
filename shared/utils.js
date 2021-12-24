@@ -33,7 +33,9 @@ class Reticle extends THREE.Object3D {
 }
 
 window.gltfLoader.load("../models/Hotel(3star).glb", function(gltf) {
-  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+  
+  // const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+  const flower = gltf.scene.children[0]
   flower.castShadow = true;
   window.sunflower = gltf.scene;
 });

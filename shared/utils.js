@@ -36,7 +36,7 @@ window.gltfLoader.load("../models/Hotel(3star).glb", function(gltf) {
 
   // const flower = gltf.scene.children.find(c => c.name === 'sunflower')
   //Scale
-  gltf.scene.scale.multiplyScalar(1 / 100)
+  gltf.scene.scale.multiplyScalar(1 / 10000)
   const flower = gltf.scene.children[0]
   console.log(gltf)
   flower.castShadow = true;
